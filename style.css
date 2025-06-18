@@ -58,6 +58,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 5px 0px;
 }
 
 button:hover {
@@ -163,4 +164,17 @@ ul > li {
 
 main > h1 {
     text-align: center;
+}
+
+main.form-container-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
