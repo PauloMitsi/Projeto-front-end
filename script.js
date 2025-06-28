@@ -73,3 +73,16 @@ button.addEventListener('click', (event) => {
 
     }
 })
+
+document.getElementById('limparCampos').addEventListener('click', () => {
+  nomeD.value = '';
+  emailD.value = '';
+});
+
+document.getElementById('excluirTodos').addEventListener('click', () => {
+  if (confirm('Tem certeza que deseja excluir todos os cadastros?')) {
+    cadastrados = [];
+    localStorage.removeItem('cadastrados');
+    atualizandoLista();
+  }
+});
