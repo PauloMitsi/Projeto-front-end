@@ -25,7 +25,8 @@ function atualizandoLista(){
 
     cadastrados.forEach(function (user) {
         var novoItem = document.createElement('li');
-        novoItem.innerHTML = `<p>Nome: ${user.nome} - Email: ${user.email} - Data de inscrição: ${user.dia}/${user.mes}/${user.ano} <button onclick=deletar(${user.id})>X</button></p>`
+        novoItem.id = "itemList"
+        novoItem.innerHTML = `<p>Nome: ${user.nome} - Email: ${user.email} - Data de inscrição: ${user.dia}/${user.mes}/${user.ano}</p><button onclick=deletar(${user.id})>X</button>`
         lista.appendChild(novoItem);
   });
 
