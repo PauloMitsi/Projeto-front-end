@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Admin</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Admin</title>
+    </head>
+    <body>
         <main class="form-container-admin">
             <h1>Cadastre um novo usuário</h1>
             <form action="pagPrincipal.html" method="get">
                 <label for="email">E-mail:</label><br />
-                <input type="email" id="email" name="email" required /><br/>
+                <input type="email" id="email" name="email" required /><br />
 
                 <label for="nome">Nome:</label><br />
-                <input type="text" id="nome" name="senha" required /><br/>
+                <input type="text" id="nome" name="senha" required /><br />
 
-                <button id='button' type="button">Cadastrar</button><br/>
-
+                <div class="formButtons">
+                    <button id="button" type="button">Cadastrar</button><br />
+                    <button id="limparCampos" type="button">
+                        Limpar Campos
+                    </button>
+                    <a href="pagPrincipal.html">
+                        <button type="button">Voltar</button>
+                    </a>
+                </div>
             </form>
+            <div class="searchBar">
+                <label for="search">Pesquisa:</label><br />
+                <input
+                    id="search"
+                    name="search"
+                    type="text"
+                    placeholder="Insira o nome"
+                />
+            </div>
             <div id="list-container">
                 <ul id="list">
                     <li id="itemList"></li>
                 </ul>
             </div>
             <div>
-                <button id="limparCampos" type="button">Limpar Campos</button>
                 <button id="excluirTodos" type="button">Excluir Todos</button>
             </div>
         </main>
-        
+
         <footer>
-          <nav>
+            <nav>
                 Currículos:
                 <a
                     href="https://tiagomsouzac.github.io/curriculo/"
@@ -51,5 +66,5 @@
             </nav>
         </footer>
         <script src="script.js"></script>
-</body>
+    </body>
 </html>
